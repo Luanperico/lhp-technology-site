@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LHP TECHNOLOGY</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- MENU FIXO -->
+  <header>
+    <div class="container">
+      <img src="logo teste 3.png.png" alt="Logo LHP" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#carousel">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#missao">Missão</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CARROSSEL -->
+  <section id="carousel" class="carousel">
+    <div class="carousel-container">
+      <div class="slides">
+        <div class="slide-wrapper">
+          <img src="logo teste.png.png" class="slide" alt="Infraestrutura de Rede" />
+          <a href="#infra" class="slide-button">Infraestrutura de Rede</a>
+        </div>
+        <div class="slide-wrapper">
+          <img src="cftv teste.png.png" class="slide" alt="CFTV e Monitoramento" />
+          <a href="#cftv" class="slide-button">CFTV e Monitoramento</a>
+        </div>
+        <div class="slide-wrapper">
+          <img src="automação teste.png.png" class="slide" alt="Automação e Controle" />
+          <a href="#automacao" class="slide-button">Automação e Controle</a>
+        </div>
+      </div>
+      <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+      <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SERVIÇOS -->
+  <section id="servicos" class="section">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="servicos-grid">
+        <div id="infra" class="card">
+          <strong>Infraestrutura de TI</strong><br>
+          Instalação de redes, cabeamento estruturado, servidores e organização técnica para empresas.
+        </div>
+        <div id="cftv" class="card">
+          <strong>CFTV e Monitoramento</strong><br>
+          Projetos de vigilância com câmeras IP, DVRs/NVRs, acesso remoto e segurança 24h.
+        </div>
+        <div id="automacao" class="card">
+          <strong>Automação Residencial</strong><br>
+          Integração de dispositivos inteligentes, controle por voz e automação de iluminação, som, etc.
+        </div>
+        <div class="card">
+          <strong>Controle de Acesso</strong><br>
+          Instalação de fechaduras digitais, catracas, biometria e sistemas de controle de entrada/saída.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SOBRE -->
+  <section id="sobre" class="sobre-nos-section section">
+    <div class="sobre-container container">
+      <div class="sobre-img-colagem">
+        <div class="img-grid">
+          <img src="Sobre nos teste1.png.png" alt="Foto 1" />
+          <img src="cftv teste.png.png" alt="Foto 2" />
+          <img src="automação teste.png.png" alt="Foto 3" />
+        </div>
+      </div>
+      <div class="sobre-texto">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma empresa especializada em Infraestrutura de TI, CFTV, Controle de Acesso e Automação Residencial. Atuamos com soluções personalizadas para sua casa ou empresa, sempre com foco na excelência e satisfação do cliente.</p>
+        <p>Com uma equipe qualificada e comprometida, garantimos a implementação de tecnologias de ponta para segurança, praticidade e inovação no seu ambiente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO MISSÃO -->
+  <section id="missao" class="mvv-section">
+    <div class="mvv-container">
+      <div class="mvv-box">
+        <h3>Missão</h3>
+        <p>Oferecer soluções tecnológicas inteligentes com foco em qualidade, segurança e inovação para nossos clientes.</p>
+      </div>
+      <div class="mvv-box">
+        <h3>Visão</h3>
+        <p>Ser referência em serviços de TI e automação, promovendo confiança e excelência em cada projeto.</p>
+      </div>
+      <div class="mvv-box">
+        <h3>Valores</h3>
+        <p>Comprometimento, ética, inovação, segurança, transparência e respeito com nossos clientes e equipe.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO CONTATO -->
+  <section id="contato" class="contato-section">
+    <div class="contato-container">
+
+      <!-- Formulário lado esquerdo -->
+      <form class="contato-form" action="#" method="post" autocomplete="off">
+        <h2>Fale Conosco</h2>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="celular">Celular</label>
+        <input type="tel" id="celular" name="celular" pattern="[0-9\s\-\+\(\)]{10,15}" placeholder="(xx) xxxxx-xxxx" required />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+        <button type="submit" class="btn enviar-btn">Enviar</button>
+      </form>
+
+      <!-- Logo lado direito -->
+      <div class="contato-logo-container">
+        <img src="logo principal 2.png.png" alt="Logo LHP Technology" class="contato-logo" />
+      </div>
+    </div>
+
+    <!-- Redes sociais abaixo do formulário e logo -->
+    <div class="contato-redes">
+      <a href="https://www.linkedin.com/company/lhp-technology/" target="_blank" aria-label="LinkedIn" class="rede-link">
+        <img src="link1.svg.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://instagram.com/seu-perfil" target="_blank" aria-label="Instagram" class="rede-link">
+        <img src="insta1.svg.svg" alt="Instagram" />
+      </a>
+      <a href="https://www.google.com/maps/place/Mat%C3%A3o,+SP/" target="_blank" aria-label="Localização" class="rede-link">
+        <img src="loc1.svg.svg" alt="Localização" />
+      </a>
+    </div>
+
+    <!-- Localização textual -->
+    <div style="text-align: center; margin-top: 10px;">
+      <h4>Localização</h4>
+      <p>Matão e Região - SP</p>
+    </div>
+  </section>
+
+  <!-- Botão WhatsApp fixo -->
+  <a href="https://wa.me/5516997002727" target="_blank" class="btn-whatsapp" aria-label="WhatsApp">
+    <img src="whtas1.svg.svg" alt="WhatsApp" />
+  </a>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container">
+      <p>© 2025 LHP TECHNOLOGY. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT DO CARROSSEL -->
+  <script>
+    let slideIndex = 0;
+    let slides = document.querySelector('.slides');
+    let totalSlides = document.querySelectorAll('.slide').length;
+
+    function showSlide(index) {
+      if (index >= totalSlides) slideIndex = 0;
+      if (index < 0) slideIndex = totalSlides - 1;
+      slides.style.transform = `translateX(-${slideIndex * 100}vw)`;
+    }
+
+    function plusSlides(n) {
+      slideIndex += n;
+      showSlide(slideIndex);
+    }
+
+    function autoSlide() {
+      slideIndex++;
+      showSlide(slideIndex);
+    }
+
+    setInterval(autoSlide, 4000);
+  </script>
+
+</body>
+</html>
